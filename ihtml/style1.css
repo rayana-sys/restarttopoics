@@ -1,0 +1,119 @@
+
+    
+/* h1{
+    color: blueviolet;
+    font-size: 35px
+}
+.text{
+    color:chocolate;
+}
+#text2{
+    color: darkred;
+    font-size: 40px;
+} */
+ .card{
+
+    background-color: coral;
+    width: 250px;
+    height: 300px;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin: 0 auto
+ }
+ .card img{
+    width: 200px;
+    padding: 10px;
+ }
+.card h1{
+    font-size: 24px;
+    color: aquamarine;
+}
+.card button{
+    padding: 6px 20px;
+
+}
+.card2{
+    background-color: violet;
+    width: 250px;
+    height: 300px;
+    text-align: center;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin: 10px auto;
+ }
+.card2 h1{
+    color: bisque;
+}
+.card2 img{
+    width: 200px;
+    padding: 10px;
+ }
+.card2 button{
+    padding: 10px 40px;
+}
+
+.container1{
+    background-color: blue;
+    width: 300px;
+    height: 300px;
+}
+
+.container2{
+    background-color: brown;
+    width: 100px;
+    height: 100px;
+}
+
+.container3{
+    background-color: pink;
+    width: 200px;
+    height: 200px;
+
+
+}
+
+.cont{
+    background-color: aquamarine;
+    color: white;
+    width: 100px;
+    text-align: center;
+    padding: 10px 20px 30px 40px;
+    margin-top: 50px;
+}
+.cont button{
+    padding: 6px 24px;
+}
+.main-card{
+    margin: 20px;
+}
+
+
+.main-container{
+    width: 270px;
+    background-color: red;
+    padding: 10px;
+   
+}
+
+.cont1{
+    width: 250px;
+    height: 100px;
+    background-color: aqua;
+    
+    margin: 10px auto;
+}
+.cont2{
+    width: 250px;
+    height: 100px;
+    background-color:yellow;
+   
+    margin: 10px auto;
+}
+.cont3{
+    width: 250px;
+    height: 100px;
+    background-color:green;
+    
+    margin: 10px auto;
+}

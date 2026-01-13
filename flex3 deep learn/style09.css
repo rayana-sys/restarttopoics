@@ -1,0 +1,14 @@
+body{
+    height: 100vh;
+}
+.grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* grid-template-rows: 100px 100px 100px; */
+    grid-gap: 25px;
+    height: 100vh;
+    justify-content: center;
+}
+.grids{
+    background-color: blue;
+}

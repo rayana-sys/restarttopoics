@@ -1,0 +1,28 @@
+.main-container{
+    width: 270px;
+    background-color: red;
+    padding: 10px;
+   
+}
+
+.cont1{
+    width: 250px;
+    height: 100px;
+    background-color: aqua;
+    
+    margin: 10px auto;
+}
+.cont2{
+    width: 250px;
+    height: 100px;
+    background-color:yellow;
+   
+    margin: 10px auto;
+}
+.cont3{
+    width: 250px;
+    height: 100px;
+    background-color:green;
+    
+    margin: 10px auto;
+}

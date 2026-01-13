@@ -1,0 +1,21 @@
+.header{
+    display: flex;
+    background-color: rgb(224, 8, 0);
+    padding: 30px;
+    gap: 50px;
+    justify-content: space-around;
+
+}
+.btn-1 button{
+    display: flex;
+    background-color: rgb(254, 109, 37);
+}
+.links  a{
+    text-decoration: none;
+    color: brown;
+    
+}
+nav{
+    display: flex;
+    gap: 50px;
+}

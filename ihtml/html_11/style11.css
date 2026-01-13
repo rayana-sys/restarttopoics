@@ -1,0 +1,29 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: aqua;
+}
+h1{
+    font-size: large;
+    font-weight: 100px;
+    color: black;
+}
+p{
+    font-size: larger;
+}
+.text2{
+    font-style: italic;
+}
+img{
+    width: 200px;
+    border-radius: 50%;
+}
+button{
+    background-color: orange;
+    color: white;
+    border-radius: 16px;
+}
+body{
+    background-image: url(https://i.pinimg.com/736x/c5/65/74/c56574cbe0759cd065a532e106d17fc9.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}

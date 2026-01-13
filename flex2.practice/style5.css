@@ -1,0 +1,672 @@
+body{
+    display: flex;
+    gap: 30px;
+    background-color: white;
+    color: black;
+    padding: 20px;
+    height: 95vh;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.leftside{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.leftside img{
+    width: 200px;
+    height: 200px;
+}
+.top1logo{
+    display: flex;
+}
+.top1{
+    text-align: center;
+    
+}
+.top1logo img{
+   width: 100px;
+   height: 100px;
+   border-radius: 50%;
+
+}
+.top1title h1{
+    font-size: 20px;
+    color: black;
+}
+.top1title p{
+    color: gray;
+}
+.links{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 150px;
+    padding-left: 5px;
+}
+.links h1{
+    font-size: 18px;
+}
+.links button{
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    border: none;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+}
+.bot1{
+    width: 200px;
+    height: 200px;
+    border: 2px gray dashed;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+.bot1 h1{
+    font-size: 18px;
+}
+.bot1 img{
+    width: 150px;
+    height: 150px;
+
+}
+.links1 h1{
+    font-size: 18px;
+    
+
+}
+.links1{
+    background-color: black;
+    color: white;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    padding-left: 10px;
+} 
+.midside{
+    display: flex;
+    justify-content: space-evenly;
+    margin-left: 40px;
+    height: 95vh;
+    flex-direction: column;
+    width: 800px;
+    
+}
+.top2{
+    display: flex;
+    gap: 300px;
+    font-size: 20px;
+    align-items: center;
+    justify-content: center;
+}
+.links2 a{
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    
+}
+.links2{
+    display: flex;
+    gap: 40px;
+    
+    align-items: center;
+}
+.block1{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(175, 198, 243);
+    height: 500px;
+    padding: 15px;
+    width: 100vh;
+    
+}
+.top2logo img{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+
+}
+.feeeds{
+    font-size: 16px;
+}
+.text1 h1{
+    font-size: 18px;
+    margin-bottom: 1px;
+}
+.text1 p{
+    font-size: 14px;
+    margin-top: 1px;
+}
+.text1{
+    display: flex;
+    flex-direction: column;
+    padding-left: 10px;
+    padding-right: 400px;
+    align-items: center;
+}
+.logo1{
+    display: flex;
+    flex-direction: row;
+    height: 100px;
+}
+.logo1 button{
+    height: 30px;
+    width: 30px;
+   background-color: transparent;
+    border: none;
+    color: black;
+    font-size: 30px;
+    position: relative;
+    left: 150px;
+    margin-top: 10px;
+    
+}
+.image1 img{
+
+    width: 150px;
+    height: 170px;
+    
+
+}
+.images{
+    position: relative;
+    margin-top: 2px;
+    left: 10px;
+
+}
+.image1{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    
+}
+.image3 img{
+    height: 170px;
+    width: 170px;
+    position: relative;
+    left: 400px;
+    bottom: 170px;
+}
+.main1 {
+    position: relative;
+    bottom: 150px;
+    height: 300px;
+  
+}
+.signs1{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 10px;
+    position: relative;
+    bottom: 100px;
+    
+    
+}
+.signs1 p{
+    position: relative;
+    top: 20px;
+    
+}
+.botblock1{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+}
+
+.comment{
+    position: relative;
+    bottom: 100px;
+    left: 500px;
+    background-color: azure;
+    height: 50px;
+    width: 65px;
+    
+    border-radius: 10px;
+
+}
+
+.seen1{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.likes1{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.comment1{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.seen1 img{
+    width: 20px;
+    height: 10px;
+    
+}
+.seen1 p{
+    margin: 0;
+    font-size: 14px;
+    
+}
+.likes1 img{
+    width: 15px;
+    height: 15px;
+    
+}
+.likes1 p{
+    margin: 0;
+    font-size: 14px;
+}
+.comment1 p{
+    margin: 0;
+    font-size: 14px;
+
+}
+.comment1 img{
+    width: 15px;
+    height: 15px;
+}
+
+
+
+.block2{
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    background-color: rgb(236, 236, 128);
+    padding: 15px;
+}
+.text2 h1{
+    font-size: 18px;
+    margin-bottom: 1px;
+}
+.text2 p{
+    font-size: 14px;
+    margin-top: 1px;
+}
+.text2{
+    display: flex;
+    flex-direction: column;
+    padding-left: 10px;
+    padding-right: 400px;
+    align-items: center;
+}
+.logo2{
+    display: flex;
+    flex-direction: row;
+    height: 100px;
+}
+.logo2 img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+.logo2 button{
+    height: 30px;
+    width: 30px;
+   background-color: transparent;
+    border: none;
+    color: black;
+    font-size: 30px;
+    position: relative;
+    left: 150px;
+    margin-top: 10px;
+    
+}
+.signs2{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 10px;
+    position: relative;
+    
+    
+    
+}
+.signs2 p{
+    position: relative;
+    top: 20px;
+    
+}
+.botblock2{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.comment{
+    position: relative;
+    bottom: 100px;
+    left: 500px;
+    background-color: azure;
+    height: 50px;
+    width: 65px;
+    
+    border-radius: 10px;
+
+}
+
+.seen2{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.likes2{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.comment2{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.seen2 img{
+    width: 20px;
+    height: 10px;
+    
+}
+.seen2 p{
+    margin: 0;
+    font-size: 14px;
+    
+}
+.likes2 img{
+    width: 15px;
+    height: 15px;
+    
+}
+.likes2 p{
+    margin: 0;
+    font-size: 14px;
+}
+.comment2 p{
+    margin: 0;
+    font-size: 14px;
+
+}
+.comment2 img{
+    width: 15px;
+    height: 15px;
+}
+
+
+
+.block3{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(238, 227, 227);
+    align-items: center;
+    gap: 15px;
+}
+.top3{
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+.top3 img{
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    display: flex;
+    
+}
+.top3 input{
+    margin: 10px;
+
+}
+.bot3{
+    display: flex;
+    flex-direction: row;
+    
+    gap: 30px;
+    padding: 10px;
+    
+    
+}
+.bot3 a{
+    text-decoration: none;
+    color: black;
+    
+    padding: 15px;
+}
+.File img{
+    width: 15px;
+    height: 15px;
+}
+.Image img{
+    width: 15px;
+    height: 15px;
+}
+.Location img{
+    width: 15px;
+    height: 15px;
+}
+.Public img{
+    width: 15px;
+    height: 15px;
+    
+}
+.simg1 img{
+    width: 200px;
+    height: 200px;
+    position: relative;
+    border-radius: 20px;
+   
+}
+
+.simg2 img{
+    width: 200px;
+    height: 200px;
+    position: relative;
+    border-radius: 20px;
+}
+.simg1 {
+    position: relative;
+    margin-top: 5px;
+}
+.simg1{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    border-radius: 50%;
+}
+.simg2{
+    display: flex;
+    flex-direction: column;
+}
+.sbot1 img{
+    width: 25px;
+    height: 25px;
+}
+.sbot2 img{
+    width: 25px;
+    height: 25px;
+}
+.sbot1{
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    height: 30px;
+    width: 140px;
+    align-items: center;
+    position: absolute;
+    z-index: 1;
+    margin-top: 160px;
+    margin-left: 4px;
+    border-radius: 20px;
+}
+.sbot2{
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    height: 30px;
+    width: 140px;
+    align-items: center;
+    position: absolute;
+    z-index: 1;
+    margin-top: 160px;
+    margin-left: 4px;
+    border-radius: 20px;
+}
+.simg{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+.bot3 button{
+    color: white;
+    background-color: black;
+    border-radius: 20px;
+    width: 70px;
+}
+.person1 img{
+    width: 30px;
+    height: 30px;
+    border-radius: 20px;
+}
+.person1 button{
+    height: 20px;
+    width: 60px;
+    color: white;
+    background-color: black;
+    border-radius: 20px;
+    margin-left: 20px;
+}
+.person1{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    align-items: center;
+}
+.person2 img{
+    width: 30px;
+    height: 30px;
+    border-radius: 20px;
+    padding-right: 30px;
+}
+.person2 button{
+    height: 20px;
+    width: 60px;
+    color: white;
+    background-color: black;
+    border-radius: 20px;
+    margin-left: 80px;
+}
+.person2{
+    display: flex;
+    flex-direction: row;
+    
+    align-items: center;
+}
+.person3 img{
+    width: 30px;
+    height: 30px;
+    border-radius: 20px;
+}
+.person3 button{
+    height: 20px;
+    width: 60px;
+    color: white;
+    background-color: black;
+    border-radius: 20px;
+}
+.person3{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    align-items: center;
+}
+.rtop{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    
+}
+.rtop1{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 2px black solid;
+    background-color: rgb(72, 72, 236);
+    display: flex;
+    justify-content: center;
+}
+.rtop2 {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 2px black solid;
+    position: relative;
+    background-color: palevioletred;
+}
+.inner {
+  width: 20px;
+  height: 20px;
+  border: 2px black solid;
+  border-radius: 50%;
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  position: absolute;
+  top: 35%;
+  left: 35%;
+}
+.rtop2 h3{
+    display: flex;
+    position: absolute;
+    top: 40%;          
+    left: 20%; 
+    font-size: 18px;
+}
+.rbot{
+    display: flex;
+    flex-direction: row;
+}
+.rbot1 img{
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    background: none;
+}
+.rbot1{
+    position: relative;
+    margin-top: 30px;
+}
+.rbot1 h3{
+    position: absolute;
+    top: 18%;
+    left: 16%;
+    font-size: 18px;
+}
+.rbot2{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 2px black solid;
+    margin-top: 30px;
+}
+.rbot2 img{
+    width: 30px;
+    height: 30px;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+.rbot2 h3{
+    margin-top: 1px;
+    margin-left: 10px;
+}

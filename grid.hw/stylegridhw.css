@@ -1,0 +1,49 @@
+.flex-1 {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.box {
+  background: lightblue;
+  padding: 20px;
+}
+
+.grow {
+  flex-grow: 1;
+}
+
+.flex-2 {
+  display: flex;
+}
+
+.left {
+  width: 200px;
+  background: lightcoral;
+  padding: 20px;
+}
+
+.right {
+  flex: 1;
+  background: lightgreen;
+  padding: 20px;
+}
+.btn {
+  background: blue;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: red;
+}
+
+.input {
+  padding: 10px;
+}
+
+.input:focus {
+  outline: 2px solid blue;
+}

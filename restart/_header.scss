@@ -1,0 +1,9 @@
+@use 'token.scss';
+
+.header{
+    background-color: black;
+    height: 100%;
+}
+a{
+    color: token.$color-black;
+}

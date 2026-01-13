@@ -1,0 +1,10 @@
+body{
+    display: flex;
+    height: 95vh;
+    gap: 20px;
+    padding: 20px;
+}
+.left{
+    background-color: coral;
+    
+}
