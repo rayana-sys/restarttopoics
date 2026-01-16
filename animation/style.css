@@ -1,0 +1,404 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow: hidden;
+    background: #87ceeb;
+}
+
+.scene {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+}
+
+/* НЕБО */
+.sky {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(#87ceeb, #dff6ff);
+    animation: skyDark 90s linear forwards;
+}
+
+/* СОЛНЦЕ */
+.sun {
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    background: radial-gradient(circle, gold, orange);
+    border-radius: 50%;
+    top: 40px;
+    right: 80px;
+    box-shadow: 0 0 60px gold;
+    animation: sunFade 90s forwards;
+}
+
+/* ОБЛАКА */
+.cloud {
+    position: absolute;
+    width: 200px;
+    height: 70px;
+    background: #fff;
+    border-radius: 50px;
+    top: 80px;
+    opacity: 0;
+}
+
+.cloud1 {
+    left: -250px;
+    animation: cloudMove 90s linear forwards;
+}
+
+.cloud2 {
+    left: -450px;
+    top: 140px;
+    animation: cloudMove 90s linear 10s forwards;
+}
+
+/* ДОМА */
+.buildings {
+    position: absolute;
+    bottom: 260px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    z-index: 2;
+}
+
+.house {
+    width: 160px;
+    height: 220px;
+    background: #f2f2f2;
+    position: relative;
+}
+
+.roof {
+    position: absolute;
+    top: -60px;
+    border-left: 80px solid transparent;
+    border-right: 80px solid transparent;
+    border-bottom: 60px solid darkred;
+}
+
+.windows {
+    width: 120px;
+    height: 100px;
+    background: repeating-linear-gradient(
+        to right,
+        #87ceeb 0 30px,
+        #ccc 30px 40px
+    );
+    margin: 30px auto;
+}
+
+.house .door {
+    width: 40px;
+    height: 60px;
+    background: brown;
+    margin: auto;
+}
+
+/* ДЕРЕВЬЯ (СЗАДИ ДОМОВ) */
+.tree {
+    position: absolute;
+    bottom: 260px;
+    z-index: 1;
+    animation: sway 4s ease-in-out infinite;
+}
+
+.t1 { left: 150px; }
+.t2 { right: 150px; }
+
+.trunk {
+    width: 30px;
+    height: 120px;
+    background: #8b5a2b;
+    margin: auto;
+}
+
+.crown {
+    width: 120px;
+    height: 100px;
+    background: radial-gradient(circle, #3cb371, #2e8b57);
+    border-radius: 50%;
+    margin-top: -60px;
+}
+
+/* ТРОТУАР */
+.sidewalk {
+    position: absolute;
+    bottom: 160px;
+    width: 100%;
+    height: 80px;
+    background: repeating-linear-gradient(
+        to right,
+        #ccc 0 40px,
+        #bbb 40px 80px
+    );
+    z-index: 3;
+}
+
+/* ДОРОГА */
+.road {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 160px;
+    background: linear-gradient(#555, #222);
+    z-index: 3;
+}
+
+/* СВЕТОФОР */
+.traffic-light {
+    position: absolute;
+    bottom: 240px;
+    left: 80px;
+    width: 40px;
+    background: #333;
+    padding: 10px;
+    border-radius: 10px;
+    z-index: 4;
+}
+
+.light {
+    width: 20px;
+    height: 20px;
+    background: #222;
+    border-radius: 50%;
+    margin: 6px auto;
+}
+
+.red { animation: redLight 90s forwards; }
+.yellow { animation: yellowLight 90s forwards; }
+.green { animation: greenLight 90s forwards; }
+
+/* МАШИНЫ */
+.car {
+    position: absolute;
+    width: 120px;
+    height: 50px;
+    background: crimson;
+    border-radius: 12px;
+    bottom: 40px;
+    z-index: 4;
+}
+
+.car2 {
+    background: royalblue;
+    bottom: 100px;
+}
+
+.wheel {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    background: black;
+    border-radius: 50%;
+    bottom: -12px;
+}
+
+.w1 { left: 10px; }
+.w2 { right: 10px; }
+
+.car .door {
+    width: 40px;
+    height: 35px;
+    background: rgba(255,255,255,0.3);
+    position: absolute;
+    left: 40px;
+    top: 8px;
+}
+
+.car1 {
+    animation: carDrive 90s linear forwards;
+}
+
+.car2 {
+    animation: carDrive2 90s linear forwards;
+}
+
+/* ЧЕЛОВЕК */
+.person {
+    position: absolute;
+    bottom: 200px;
+    left: 5%;
+    z-index: 4;
+    animation: walkPath 60s linear forwards;
+}
+
+.head {
+    width: 32px;
+    height: 32px;
+    background: peachpuff;
+    border-radius: 50%;
+    margin: auto;
+}
+
+.body {
+    width: 24px;
+    height: 60px;
+    background: orange;
+    margin: auto;
+    border-radius: 10px;
+}
+
+.legs {
+    width: 40px;
+    height: 60px;
+    margin: auto;
+    position: relative;
+}
+
+.leg {
+    width: 10px;
+    height: 50px;
+    background: #333;
+    position: absolute;
+    bottom: 0;
+    transform-origin: top;
+}
+
+.left {
+    left: 8px;
+    animation: legWalk 1s infinite alternate;
+}
+
+.right {
+    right: 8px;
+    animation: legWalk 1s infinite alternate-reverse;
+}
+
+/* ТЕКСТ */
+.freeze-text {
+    margin-top: 10px;
+    background: white;
+    padding: 8px 14px;
+    border-radius: 14px;
+    font-family: Arial;
+    opacity: 0;
+    animation: showText 90s forwards;
+}
+
+/* СНЕГ */
+.snow {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    background-image: radial-gradient(white 2px, transparent 3px);
+    background-size: 30px 30px;
+    animation: snowFall 5s linear infinite, snowStart 90s forwards;
+    opacity: 0;
+    z-index: 10;
+}
+
+/* СЛОЙ СНЕГА */
+.snow-layer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 0;
+    background: #fff;
+    z-index: 5;
+    animation: snowLayerGrow 90s forwards;
+}
+
+/* АНИМАЦИИ */
+
+@keyframes cloudMove {
+    0% { left: -300px; opacity: 0; }
+    40% { opacity: 0; }
+    60% { opacity: 1; }
+    100% { left: 110%; opacity: 1; }
+}
+
+@keyframes snowFall {
+    from { background-position: 0 -600px; }
+    to { background-position: 0 0; }
+}
+
+@keyframes snowStart {
+    0% { opacity: 0; }
+    60% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+@keyframes snowLayerGrow {
+    0% { height: 0; }
+    60% { height: 0; }
+    100% { height: 60px; }
+}
+
+@keyframes skyDark {
+    0% { filter: brightness(1); }
+    60% { filter: brightness(1); }
+    100% { filter: brightness(0.7); }
+}
+
+@keyframes sunFade {
+    0% { opacity: 1; }
+    60% { opacity: 1; }
+    100% { opacity: 0; }
+}
+
+@keyframes walkPath {
+    from { left: 5%; }
+    to { left: 60%; }
+}
+
+@keyframes legWalk {
+    from { transform: rotate(20deg); }
+    to { transform: rotate(-20deg); }
+}
+
+@keyframes showText {
+    0% { opacity: 0; }
+    65% { opacity: 0; }
+    75% { opacity: 1; }
+    100% { opacity: 1; }
+}
+
+@keyframes sway {
+    from { transform: rotate(-3deg); }
+    to { transform: rotate(3deg); }
+}
+
+/* Машины: стоп на красный, потом едут */
+@keyframes carDrive {
+    0% { left: -150px; }
+    40% { left: 400px; }   /* подъехала к светофору */
+    60% { left: 400px; }   /* стоит на красном */
+    100% { left: 110%; }
+}
+
+@keyframes carDrive2 {
+    0% { left: -300px; }
+    40% { left: 300px; }
+    60% { left: 300px; }
+    100% { left: 110%; }
+}
+
+/* СВЕТОФОР */
+@keyframes redLight {
+    0% { background: #222; }
+    40% { background: red; }
+    60% { background: red; }
+    100% { background: #222; }
+}
+
+@keyframes yellowLight {
+    0% { background: #222; }
+    60% { background: yellow; }
+    70% { background: #222; }
+}
+
+@keyframes greenLight {
+    0% { background: green; }
+    40% { background: green; }
+    60% { background: #222; }
+    100% { background: green; }
+}
