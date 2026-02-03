@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Адаптивная верстка</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- <div class="cards">
+        <div class="card">Card 1</div>
+        <div class="card">Card 2</div>
+        <div class="card">Card 3</div>
+    </div> -->
+    <!-- <header class="header">
+        <div class="container nav">
+            <div class="logo">
+                Logo
+            </div>
+
+            <nav class="nav-links"> 
+                <a href="">О нас</a>
+                <a href="">Преимущества</a>
+                <a href="">Контакты</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container hero-content">
+            <div class="hero-text">
+                <h1>Персональный сайт разработчика</h1>
+                <p>Обо мне, мой личный путь</p>
+                <button>Подробнее</button>
+            </div>
+            <img src="https://i2hard.ru/upload/iblock/f40/f404514ccd9cd9e281df129bd91e3631.jpg" alt="gaben">
+        </div>
+    </section> -->
+
+    <div class="header">
+    <div class="logo">Logo</div>
+
+    <!-- CSS-only burger -->
+    <input type="checkbox" id="nav-toggle" class="nav-toggle" />
+    <label for="nav-toggle" class="burger" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </label>
+
+    <div class="links">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#catalog">Catalog</a>
+      <a href="#contact">Contact</a>
+    </div>
+
+    <div class="btn">
+      <button type="button">Button</button>
+    </div>
+  </div>
+
+  <div class="main">
+
+    <section class="hero" id="home">
+      <div class="hero-left">
+        <div class="hero-photo" role="img" aria-label="Product photo"></div>
+
+        <div class="hero-mini">
+          <div class="mini-title">Fast delivery</div>
+          <div class="mini-text">24–48 hours in your city</div>
+        </div>
+
+        <div class="hero-mini">
+          <div class="mini-title">Top rated</div>
+          <div class="mini-text">4.8 average score</div>
+        </div>
+      </div>
+
+      <div class="hero-right">
+        <div class="hero-card">
+          <div class="tag">New • iOS glass • Bento</div>
+          <h1 class="headline">Modern products for modern people</h1>
+          <p class="desc">
+            Clean UI, glassmorphism, bento layout — and всё это адаптивно.
+            На мобилке выглядит так же аккуратно, как в приложениях iOS.
+          </p>
+
+          <div class="hero-cta">
+            <button type="button" class="cta-primary">Get Started</button>
+            <button type="button" class="cta-secondary">Watch Demo</button>
+          </div>
+
+          <div class="hero-stats">
+            <div class="stat">
+              <div class="stat-num">120+</div>
+              <div class="stat-label">Products</div>
+            </div>
+            <div class="stat">
+              <div class="stat-num">4.8</div>
+              <div class="stat-label">Rating</div>
+            </div>
+            <div class="stat">
+              <div class="stat-num">2y</div>
+              <div class="stat-label">Warranty</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-card hero-card-secondary">
+          <h3 class="subheadline">Why this layout works</h3>
+          <ul class="list">
+            <li>Flex-only responsive layout</li>
+            <li>Glass cards with blur</li>
+            <li>Good spacing + typography</li>
+            <li>Mobile burger without JS</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="cards" id="catalog">
+      <div class="section-head">
+        <h2 class="section-title">Catalog</h2>
+        <p class="section-desc">6 карточек: фото, заголовок, рейтинг + прайс, кнопка “Купить”.</p>
+      </div>
+
+      <div class="cards-wrap">
+
+        <div class="card">
+          <div class="card-photo p1"></div>
+          <h3 class="card-title">Air Glass Headphones</h3>
+          <div class="card-meta">
+            <div class="rating">★ 4.7</div>
+            <div class="price">$129</div>
+          </div>
+          <button class="buy" type="button">Buy</button>
+        </div>
+
+        <div class="card">
+          <div class="card-photo p2"></div>
+          <h3 class="card-title">Bento Smart Watch</h3>
+          <div class="card-meta">
+            <div class="rating">★ 4.9</div>
+            <div class="price">$199</div>
+          </div>
+          <button class="buy" type="button">Buy</button>
+        </div>
+
+        <div class="card">
+          <div class="card-photo p3"></div>
+          <h3 class="card-title">Minimal Speaker</h3>
+          <div class="card-meta">
+            <div class="rating">★ 4.6</div>
+            <div class="price">$89</div>
+          </div>
+          <button class="buy" type="button">Buy</button>
+        </div>
+
+        <div class="card">
+          <div class="card-photo p4"></div>
+          <h3 class="card-title">iOS Desk Lamp</h3>
+          <div class="card-meta">
+            <div class="rating">★ 4.8</div>
+            <div class="price">$59</div>
+          </div>
+          <button class="buy" type="button">Buy</button>
+        </div>
+
+        <div class="card">
+          <div class="card-photo p5"></div>
+          <h3 class="card-title">Glass Keyboard</h3>
+          <div class="card-meta">
+            <div class="rating">★ 4.5</div>
+            <div class="price">$149</div>
+          </div>
+          <button class="buy" type="button">Buy</button>
+        </div>
+
+        <div class="card">
+          <div class="card-photo p6"></div>
+          <h3 class="card-title">Bento Mouse Pro</h3>
+          <div class="card-meta">
+            <div class="rating">★ 4.7</div>
+            <div class="price">$79</div>
+          </div>
+          <button class="buy" type="button">Buy</button>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="feedback" id="contact">
+      <div class="feedback-wrap">
+        <div class="feedback-left">
+          <h2 class="section-title">Свяжитесь с нами</h2>
+          <p class="section-desc">
+            Оставьте контакты — мы ответим быстро. Это простой блок формы под лендинги.
+          </p>
+
+          <div class="chips">
+            <div class="chip">Support 24/7</div>
+            <div class="chip">Telegram</div>
+            <div class="chip">Instagram</div>
+          </div>
+        </div>
+
+        <form class="feedback-form">
+          <label class="field">
+            <span class="label">Ваше имя</span>
+            <input type="text" placeholder="Например, Алия" />
+          </label>
+
+          <label class="field">
+            <span class="label">Телефон / Telegram</span>
+            <input type="text" placeholder="+7 (___) ___-__-__" />
+          </label>
+
+          <label class="field">
+            <span class="label">Сообщение</span>
+            <input type="text" placeholder="Хочу узнать про доставку и цену..." />
+          </label>
+
+          <button type="submit" class="cta-primary">Send</button>
+
+          <div class="form-note">
+            Нажимая “Send”, вы соглашаетесь на обработку данных.
+          </div>
+        </form>
+      </div>
+    </section>
+
+  </div>
+
+  <div class="footer">
+    <div class="footer-top">
+      <div class="leftside">Logo</div>
+      <div class="rightside">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#catalog">Catalog</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+    <div class="bottom">All rights reserved | 2025 Logo</div>
+  </div>
+
+</body>
+</html>

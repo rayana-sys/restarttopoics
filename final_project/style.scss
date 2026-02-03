@@ -1,0 +1,538 @@
+$main-color: #F7E1C2;
+$second-color: #C68433;
+$third-color: #67300F;
+$fourth-color: #FEFCF3;
+$fifth-color:#633108;
+$main-font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+$sixth-color:#9a5a25;
+@mixin flex-center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+@mixin flex-row{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.header_top{
+    flex-direction: row;
+    @include flex-center;
+    border-bottom: 2px solid $third-color;
+    button{
+    text-decoration: none;
+    color: $fourth-color;
+    border: 2px solid $third-color;
+    max-width: 180px;
+    max-height: 40px;
+    @include flex-center;
+    background-color: $second-color;
+    font-family: $main-font-family;
+    border-radius: 20px;
+}
+img{
+    max-width: 370px;
+    max-height: 200px;
+    padding-left: 320px;
+    padding-right: 320px;
+}
+}
+.header_bot_1{
+    @include flex-row;
+    gap: 50px;
+    a{
+    text-decoration: none;
+    color: $second-color;
+    padding: 15px;
+    margin-top: 20px;
+    font-family: $main-font-family;
+    &:hover{
+        color: $third-color;
+    }
+}
+}
+.hero{
+    background-color: $fourth-color;
+}
+.header_bot{
+    @include flex-row;
+}
+.images{
+    @include flex-row;
+    gap: 30px;
+    margin-left: 480px;
+    img{
+    background-color: $second-color;
+    max-width: 30px;
+    max-height: 30px;
+    padding: 5px;
+    border-radius: 10px;
+} 
+}
+.home_1{
+    margin-top: 20px;
+    padding-inline-start: 20px;
+    background-color: $second-color;
+    display: flex;
+    button{
+    max-width: 100px;
+    max-height: 50px;
+}
+}
+.image_1{
+    max-width: 560px;
+    max-width: 310px;
+    box-shadow: 5px 5px 15px 15px $fifth-color;
+    margin: 25px;
+    display: flex;
+    img{
+    max-width: 560px;
+    max-width: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+}
+.home_1_top{
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    gap: 60px;
+    button{
+    color: $third-color;
+    background-color: $fourth-color;
+    border: 2px solid $third-color;
+    border-radius: 20px;
+    }
+}
+.text_1{
+    font-family: $main-font-family;
+    color: $fourth-color;
+    h1{
+    font-size: 80px;
+    }
+    p{
+    font-size: 30px;
+    }
+}
+.header_1{
+    background-color: $fourth-color;
+    @include flex-row;
+    justify-content: space-around;
+    img{
+    background-color: $third-color;
+    padding: 10px;
+    @include flex-center;
+    border-radius: 20px;
+    max-width: 35px;
+    max-height: 35px;
+    }
+    
+}
+.about_1{
+    color: $third-color
+}
+.locations{
+    @include flex-row;
+    gap: 20px;
+    
+}
+.reservation{
+    @include flex-row;
+    gap: 20px;
+}
+.hours{
+    @include flex-row;
+    gap: 20px;
+}
+.story{
+    background-color: $fourth-color;
+    padding: 25px;
+    @include flex-row;
+    justify-content: space-around;
+    img{
+        border-radius: 20px;
+    }
+    .story_text{
+        display: flex;
+        flex-direction: column;
+        .story_bot{
+            @include flex-row;
+            gap: 90px;
+        }
+    }
+}
+.first{
+    max-width: 50vh;
+    
+}
+.second{
+    max-width: 50vh;
+}
+.menu_1{
+    color: $third-color;
+    background-color: #FCF9EF;
+    @include flex-row;
+    gap: 200px;
+    max-height: 1050px;
+    .left{
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        gap: 50px;
+        max-width: 65vh;
+        gap: 60px;
+        img{
+            max-width: 250px;
+            max-height: 300px;
+            border-radius: 20px;
+        }
+        button{
+            max-width: 120px;
+            max-height: 40px;
+            color: $third-color;
+            border: 2px solid $third-color;
+            background-color: $main-color;
+            margin-left: 30px;
+        }
+    }
+}
+.menu_text{
+    font-size: 22px;
+}
+.right{
+    max-width: 60vh;
+    img{
+        max-height: 1000px;
+    }
+}
+.offers_1{
+    background-color: $fourth-color;
+    padding: 25px;
+    color: $fifth-color;
+}
+.offers_text{
+    @include flex-center;
+    
+    flex-direction: column;
+    h4{
+        max-width: 70px;
+        border-top: 2px solid $second-color;
+        @include flex-center;
+        border-bottom: 2px solid $second-color;
+    }
+    p{
+        @include flex-center;
+        
+    }
+}
+.image_offer{
+    @include flex-row;
+    justify-content: space-around;
+    padding-top: 15px;
+}
+.offer1{
+    background-color: $main-color;
+    @include flex-row;
+    border: 2px solid $second-color;
+    border-radius: 20px;
+    padding: 10px;
+    .offer1_h1{
+        background-color: $fourth-color;
+        border-radius: 100px;
+        h1{
+            @include flex-center;
+        }
+    }
+    h4{
+        border-bottom: 2px solid $second-color;
+        @include flex-center;
+        border-top: 2px solid $second-color;
+    }
+}
+.offer2{
+    background-color: $main-color;
+    @include flex-row;
+    border: 2px solid $second-color;
+    border-radius: 20px;
+    padding: 10px;
+    .offer2_h1{
+        background-color: $fourth-color;
+        border-radius: 100px;
+        h1{
+            @include flex-center;
+        }
+    }
+    h4{
+        border-bottom: 2px solid $second-color;
+        @include flex-center;
+        border-top: 2px solid $second-color;
+    }
+}
+body{
+    font-family: $main-font-family;
+}
+.reviews_1{
+    background-color: $second-color;
+    padding: 25px;
+    color: $fourth-color;
+    .clients{
+        @include flex-row;
+        justify-content: space-around;
+    }
+}
+
+.first_client{
+    background-color: $sixth-color;
+    border-radius: 25px;
+    padding: 15px;
+    .first_top{
+        @include flex-row;
+        gap: 30px;
+        border-bottom: 2px solid $second-color;
+        padding-bottom: 5px;
+    }
+}
+.second_client{
+    background-color: $sixth-color;
+    border-radius: 25px;
+    padding: 15px;
+    .second_top{
+        @include flex-row;
+        gap: 30px;
+        border-bottom: 2px solid $second-color;
+        padding-bottom: 5px;
+    }
+}
+.third_client{
+    background-color: $sixth-color;
+    border-radius: 25px;
+    padding: 15px;
+    .third_top{
+        @include flex-row;
+        gap: 30px;
+        border-bottom: 2px solid $second-color;
+        padding-bottom: 5px;
+    }
+}
+.contacts_top{
+    @include flex-center;
+    flex-direction: column;
+    gap: 60px;
+    background-color: $fourth-color;
+    padding: 55px;
+    .contacts1_top{
+        @include flex-center;
+        gap: 30px;
+    }
+    .contacts1_bot{
+        @include flex-center;
+        gap: 30px;
+    }
+}
+.contacts_top{
+    button{
+        color: $fifth-color;
+        background-color: $main-color;
+        padding: 15px;
+        border-radius: 20px;
+    }
+}
+.placeholders{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        input{
+            color: $fifth-color;
+            background-color: $main-color;
+            max-width: 130px;
+            max-height: 50px;
+            border-radius: 15px;
+            padding: 5px;
+            
+        }
+        
+    }
+.contacts_text{
+    color: $fifth-color;
+    h1{
+        @include flex-center;
+        border-top: 2px solid $second-color;
+        border-bottom: 2px solid $second-color;
+    }
+    h3{
+        @include flex-center;
+    }
+    
+}
+.contacts2_top{
+    flex-direction: row;
+    @include flex-center;
+    border-bottom: 2px solid $third-color;
+    button{
+    text-decoration: none;
+    color: $fourth-color;
+    border: 2px solid $third-color;
+    max-width: 180px;
+    max-height: 40px;
+    @include flex-center;
+    background-color: $second-color;
+    font-family: $main-font-family;
+    border-radius: 20px;
+}
+img{
+    max-width: 370px;
+    max-height: 200px;
+    padding-left: 320px;
+    padding-right: 320px;
+}
+}
+.contacts_bot{
+    background-color: $fourth-color;
+    padding: 60px;
+    border-top: 2px solid $fifth-color;
+    color: $fifth-color;
+    .contacts2_bot{
+        @include flex-row;
+        justify-content: space-between;
+        h2{
+            display: flex;
+            border-bottom: 2px solid $second-color;
+            border-top: 2px solid $second-color;
+            justify-content: center;
+        }
+    }
+}
+.contacts2_mid{
+    p{
+        @include flex-center;
+    }
+    input{
+        color: $fifth-color;
+        background-color: $main-color;
+        max-height: 30px;
+        
+        max-width: 200px;
+        
+    }
+    button{
+        color: $fifth-color;
+        background-color: $main-color;
+        height: 35px;
+        margin-left: -5px;
+        max-width: 100px;
+        &:focus{
+            color: $second-color;
+        }
+    }
+}
+
+
+@media (max-width: 768px) {
+  .header_top {
+    flex-direction: column;
+    gap: 15px;
+    img {
+      width: 200px;
+      height: auto;
+      padding: 0;
+    }
+  }
+  .header_bot {
+    flex-direction: column;
+    align-items: center;
+  }
+  .header_bot_1 {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .images {
+    margin-left: 0;
+    justify-content: center;
+  }
+
+
+  .home_1 {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .image_1 {
+    width: auto;
+    height: auto;
+    box-shadow: none;
+    img {
+      width: 90%;
+      height: auto;
+    }
+  }
+  .text_1 h1 {
+    font-size: 40px;
+  }
+  .text_1 p {
+    font-size: 18px;
+  }
+
+
+  .header_1 {
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+  }
+  .story {
+    flex-direction: column;
+    gap: 30px;
+  }
+  .story_bot {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .first{
+    width: 100%;
+  }
+  .second{
+    width: 100%;
+  }
+
+
+  .menu_1 {
+    flex-direction: column;
+    height: auto;
+    gap: 40px;
+  }
+  .right img {
+    height: auto;
+    width: 100%;
+  }
+  .image_offer {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .reviews_1 .clients {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .contacts1_top,
+  .contacts1_bot {
+    flex-direction: column;
+  }
+  .contacts2_bot {
+    flex-direction: column;
+    gap: 30px;
+    text-align: center;
+  }
+}
+
+
+
+
+@media (max-width: 1024px) {
+  .menu_1 {
+    gap: 80px;
+  }
+
+  .text_1 h1 {
+    font-size: 60px;
+  }
+}
